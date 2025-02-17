@@ -1,3 +1,4 @@
+import math
 # This is a sample Python script.
 
 # Press Shift+F10 to execute it or replace it with your code.
@@ -10,24 +11,35 @@ def print_hi(name):
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 # returns num1 plus num2
-def add(num1, num2):
-    return num1 + num2
+class Add:
+    def add(self, num1, num2):
+        return num1 + num2
 
-# returns num1 subtracted by num2
 def subtract(num1, num2):
     return num1 - num2
 
 # returns num1 multiplied by num2
 def multiply(num1, num2):
-    return num1 * num2
+    if isinstance(num1, (int, float)) and isinstance(num2, (int, float)):
+        sum = 0
+        for i in range(int(num2)):
+            sum += num1
+        return sum
+    else: return "Invalid Input"
 
 # returns num1 divided by num2
 def divide(num1, num2):
+
+    square_root = math.sqrt(num1)
+    print(f"This numbers square root is: {square_root}")
+    print(f"This number squared is: {num1 * num1}")
     return num1 / num2
+
 
 def perform_operation(num1, operator, num2):
     if operator == "+":
-        return add(num1, num2)
+        add1 = Add()
+        return add1.add(num1, num2)
     elif operator == "-":
         return subtract(num1, num2)
     elif operator == "*":

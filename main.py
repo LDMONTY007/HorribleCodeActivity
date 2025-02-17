@@ -13,6 +13,7 @@ def print_hi(name):
 def add(num1, num2):
     return num1 + num2
 
+# takes 2 numbers as parameters, being num1 and num2
 # returns num1 subtracted by num2
 def subtract(num1, num2):
     return num1 - num2
