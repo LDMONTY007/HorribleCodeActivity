@@ -4,22 +4,29 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
+# takes an input and prints "Hi, {input}"
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
+# returns num1 plus num2
 def add(num1, num2):
     return num1 + num2
 
+# returns num1 subtracted by num2
 def subtract(num1, num2):
     return num1 - num2
 
+# returns num1 multiplied by num2
 def multiply(num1, num2):
     return num1 * num2
 
+# returns num1 divided by num2
 def divide(num1, num2):
     return num1 / num2
 
+# takes 3 parameters, the first number, an operation symbol,
+# and the second number and performs that operation.
 def perform_operation(num1, operator, num2):
     if operator == "+":
         return add(num1, num2)
